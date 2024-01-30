@@ -37,8 +37,8 @@ code {
   bottom: 0;
   background-image:
     linear-gradient(to top left, rgba(0, 0, 0, 0.87) 20%, #5663f215 100%),
-    linear-gradient(to top right, rgba(0, 0, 0, 0.842) 20%, #5663f256 100%),
-    linear-gradient(to bottom left, rgba(0, 0, 0, 0) 20%, #5663f2e8 100%),
+    linear-gradient(to top right, rgba(0, 0, 0, 0.356) 20%, #5663f256 100%),
+    linear-gradient(to bottom left, rgba(0, 0, 0, 0) 20%, #5663f25e 100%),
     linear-gradient(to bottom right, rgb(0, 0, 0) 20%, rgba(0, 21, 255, 0) 100%);
 }
 
@@ -90,6 +90,14 @@ code {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 15px;
+}
+
+.title-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  background: linear-gradient(to right, #5661f644, #000000, #000000, #5661f644);
 }
 
 @media (min-width: 768px) {

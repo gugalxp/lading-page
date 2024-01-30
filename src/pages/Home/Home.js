@@ -46,7 +46,7 @@ export function Home() {
                 />
             </div>
             <div className="parallax-container">
-                <div className="parallax-image slots" style={{ backgroundImage: `url('/image-background4.jpeg')` }}>
+                <div className="parallax-image slots" style={{ backgroundImage: `url('/image-background6.jpeg')` }}>
                     <div className="parallax-shadow"></div>
                     <div className="parallax-content">
                         <div className="parallax-content-main">
@@ -61,10 +61,11 @@ export function Home() {
                     </div>
                 </div>
             </div>
-
+            <div className="title-carousel" data-aos="zoom-in-up" data-aos-duration="2000">
+                <h1 style={{ color: '#5662F6', textAlign: 'center' }}>Blaze <span style={{ color: '#fff' }}>pagando</span> 🔥</h1>
+            </div>
             <div className="spacer" data-aos-duration="2000" data-aos="fade-up">
-                <h1 style={{ color: '#5662F6', textAlign: 'center' }}>Blaze pagando 🔥</h1>
-                <Carousel slidesToShow={3} speed={4000} autoplay infinite autoplaySpeed={4000} style={{ height: '100%' }}>
+                <Carousel slidesToShow={3} speed={2000} autoplay infinite={true} autoplaySpeed={1000} style={{ height: '100%' }}>
                     <Image.PreviewGroup>
                         <Image
                             src="/prova1.jpg"
