@@ -24,7 +24,7 @@ export function Home() {
                     <div className="parallax-shadow"></div>
                     <div className="parallax-content">
                         <div className="parallax-content-main">
-                            <h1 style={{ color: 'white', fontSize: '30px' }} data-aos="zoom-in-left" data-aos-duration="2000">
+                            <h1 style={{ color: 'white', fontSize: '30px' }} data-aos="fade-up" data-aos-duration="2000">
                                 Entre de cabeça na <span style={{ color: '#5662F6' }}>experiência frenética
                                 </span> dos SINAIS DE BRANCO, os mais emocionantes do 🌍
                             </h1>
@@ -37,7 +37,7 @@ export function Home() {
             </div>
 
             <div className="spacer" data-aos-duration="2000" data-aos="fade-up">
-                <Carousel slidesToShow={3} speed={4000} autoplay infinite autoplaySpeed={500} style={{ height: '100%' }}>
+                <Carousel slidesToShow={3} speed={4000} autoplay infinite autoplaySpeed={4000} style={{ height: '100%' }}>
                     <Image.PreviewGroup>
                         <Image
                             src="/prova1.jpg"
