@@ -37,6 +37,7 @@ export function Home() {
             </div>
 
             <div className="spacer" data-aos-duration="2000" data-aos="fade-up">
+                <h1 style={{ color: '#5662F6', textAlign: 'center' }}>Blaze pagando</h1>
                 <Carousel slidesToShow={3} speed={4000} autoplay infinite autoplaySpeed={4000} style={{ height: '100%' }}>
                     <Image.PreviewGroup>
                         <Image
