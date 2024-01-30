@@ -1,6 +1,32 @@
-import { Button, Carousel, Image } from "antd";
+import { Button, Carousel, Collapse, Image } from "antd";
 
 export function Home() {
+
+    const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+
+    const items = [
+        {
+            key: '1',
+            label: 'This is panel header 1',
+            children: <p>{text}</p>,
+        },
+        {
+            key: '2',
+            label: 'This is panel header 2',
+            children: <p>{text}</p>,
+        },
+        {
+            key: '3',
+            label: 'This is panel header 3',
+            children: <p>{text}</p>,
+        },
+    ];
+
+
     return (
         <div>
             <div className="navbar">
@@ -37,7 +63,7 @@ export function Home() {
             </div>
 
             <div className="spacer" data-aos-duration="2000" data-aos="fade-up">
-                <h1 style={{ color: '#5662F6', textAlign: 'center' }}>Blaze pagando</h1>
+                <h1 style={{ color: '#5662F6', textAlign: 'center' }}>Blaze pagando 🔥</h1>
                 <Carousel slidesToShow={3} speed={4000} autoplay infinite autoplaySpeed={4000} style={{ height: '100%' }}>
                     <Image.PreviewGroup>
                         <Image
@@ -99,10 +125,10 @@ export function Home() {
                 <div className="parallax-image roleta" style={{ backgroundImage: `url('/image-background5.jpeg')` }}>
                     <div className="parallax-shadow"></div>
                     <div className="parallax-content">
-                        <h1 style={{ color: 'white' }}>Roleta</h1>
-                        <p style={{ color: 'white' }}>Faça sua aposta na roleta e veja a bola girar! Descubra se a fortuna está do seu lado.</p>
-                        <button style={{ color: 'white' }}>Jogar Roleta</button>
-                    </div>
+                        <Collapse items={items} defaultActiveKey={true} />
+                        <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
+                            Eu quero lucrar todos os dias
+                        </Button>                    </div>
                 </div>
             </div>
         </div>

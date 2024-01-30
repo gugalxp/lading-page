@@ -55,7 +55,7 @@ code {
 }
 
 .parallax-content-main {
-  max-width: 80%;
+  max-width: 90%;
   text-align: center;
   font-size: 25px;
 }
@@ -93,6 +93,10 @@ code {
 }
 
 @media (min-width: 768px) {
+  .parallax-content-main {
+    max-width: 80%;
+  }
+
   .button {
     background: #14c914;
     color: white;
@@ -116,4 +120,3 @@ code {
   display: flex;
   justify-content: center;
 }
-
