@@ -11,8 +11,8 @@ export function Home() {
                         marginTop: '2em',
                         zIndex: '2',
                         position: 'absolute',
-                        width: '13em',
-                        height: '13em'
+                        width: '14em',
+                        height: '14em'
                     }}
                     src="/image-background-removebg.png"
                     alt="Logo"
