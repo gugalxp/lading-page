@@ -31,7 +31,7 @@ code {
 
 .parallax-container2 {
   position: relative;
-  height: 140vh;
+  height: 129vh;
   overflow: hidden;
 }
 
@@ -39,7 +39,7 @@ code {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 140vh;
+  height: 129vh;
   width: 100%;
 }
 

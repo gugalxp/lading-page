@@ -24,11 +24,10 @@ export function Home() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setRemainingTime((prev) => {
-                const updatedTime = prev > 0 ? prev - 1 : initialDuration;  // Volta para 1 hora se atingir zero
+                const updatedTime = prev > 0 ? prev - 1 : initialDuration;
                 localStorage.setItem('remainingTime', updatedTime.toString());
 
                 if (updatedTime === initialDuration) {
-                    // Resetar o localStorage para 3600 quando voltar para 1 hora
                     localStorage.setItem('remainingTime', initialDuration.toString());
                 }
 
@@ -198,7 +197,7 @@ export function Home() {
                                     isPlaying
                                     duration={initialDuration}
                                     colors={['#FF0A44', '#FF0A44', '#FF0A44', '#FF0A44']}
-                                    colorsTime={[3600, 10, 2, 0]}
+                                    colorsTime={[2700, 10, 2, 0]}
                                 >
                                     {() => (
                                         <div style={{ color: 'white', fontSize: '32px' }}>
