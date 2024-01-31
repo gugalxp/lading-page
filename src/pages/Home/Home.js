@@ -16,19 +16,22 @@ export function Home() {
         'SUPORTE EXCLUSIVO.',
     ];
 
-    const initialDuration = 2700;
+    const initialDuration = 2700; // 45 minutos em segundos
     const [remainingTime, setRemainingTime] = useState(
-        parseInt(sessionStorage.getItem('remainingTime')) || initialDuration
+        parseInt(sessionStorage.getItem('remainingTime'), 10) || initialDuration
     );
+
+    useEffect(() => {
+        sessionStorage.setItem('remainingTime', remainingTime.toString());
+    }, [remainingTime]);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setRemainingTime((prev) => {
                 const updatedTime = prev > 0 ? prev - 1 : initialDuration;
-                localStorage.setItem('remainingTime', updatedTime.toString());
 
-                if (updatedTime === initialDuration) {
-                    localStorage.setItem('remainingTime', initialDuration.toString());
+                if (updatedTime === 0) {
+                    sessionStorage.setItem('remainingTime', initialDuration.toString());
                 }
 
                 return updatedTime;
@@ -37,8 +40,6 @@ export function Home() {
 
         return () => clearInterval(intervalId);
     }, [initialDuration]);
-
-
     return (
         <div>
             <div className="navbar">
@@ -197,7 +198,7 @@ export function Home() {
                                     isPlaying
                                     duration={initialDuration}
                                     colors={['#FF0A44', '#FF0A44', '#FF0A44', '#FF0A44']}
-                                    colorsTime={[2700, 10, 2, 0]}
+                                    strokeWidth={20}
                                 >
                                     {() => (
                                         <div style={{ color: 'white', fontSize: '32px' }}>
@@ -210,7 +211,7 @@ export function Home() {
                             </div>
                             <div className="largura">
                                 <h1 style={{ textAlign: 'center', width: '100%' }}>
-                                    ASSINE NO PERÍODO PROMOCIONAL E SUA MENSALIDADE SEMPRE SERÁ: <br/>
+                                    ASSINE NO PERÍODO PROMOCIONAL E SUA MENSALIDADE SEMPRE SERÁ: <br />
                                     <span style={{ color: 'green', whiteSpace: 'nowrap', fontSize: '32px', marginTop: '3em' }}>
                                         R$ 149,90/MÊS
                                     </span>
