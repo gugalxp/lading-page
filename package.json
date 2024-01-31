@@ -9,7 +9,9 @@
     "antd": "^5.13.3",
     "aos": "^2.3.4",
     "react": "^18.2.0",
+    "react-countdown-circle-timer": "^3.2.1",
     "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

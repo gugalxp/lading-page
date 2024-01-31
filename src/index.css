@@ -29,6 +29,20 @@ code {
   width: 100%;
 }
 
+.parallax-container2 {
+  position: relative;
+  height: 140vh;
+  overflow: hidden;
+}
+
+.parallax-image2 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 140vh;
+  width: 100%;
+}
+
 .parallax-shadow {
   position: absolute;
   top: 0;
@@ -71,6 +85,18 @@ code {
   flex-direction: column;
   width: 100%;
   height: 100vh;
+}
+
+.parallax-content-main3 {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 3em;
 }
 
 .spacer {
@@ -118,6 +144,30 @@ code {
     max-width: 65%;
   }
 
+  .largura {
+    width: 50%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: #fff;
+    font-weight: bolder;
+  }
+
+  .parallax-container2 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .parallax-image2 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+
   .button {
     background: #5662F6;
     color: white;
@@ -132,14 +182,24 @@ code {
   }
 
   .spacer {
-    height: 30vh !important;
+    height: 60vh;
     background-color: #000;
   }
+
   .content-services {
-    background-color: #000000;
     border-radius: 10px;
     width: 40%;
     padding: 1em;
+  }
+
+  .content-services-promocao {
+    width: 40%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
   }
 }
 
@@ -153,4 +213,23 @@ code {
   border-radius: 10px;
   width: 80%;
   padding: 1em;
+}
+
+.content-services-promocao {
+  border-radius: 10px;
+  background-color: #000;
+  width: 90%;
+  padding: 1em;
+}
+
+@media (max-width: 767px) {
+  .largura {
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: #fff;
+    font-weight: bolder;
+  }
 }
