@@ -213,7 +213,7 @@ export function Home() {
                                 <h1 style={{ textAlign: 'center', width: '100%' }}>
                                     ASSINE NO PERÍODO PROMOCIONAL E SUA MENSALIDADE SEMPRE SERÁ: <br/>
                                     <span style={{ color: 'green', whiteSpace: 'nowrap', fontSize: '32px', marginTop: '3em' }}>
-                                        R$ 149,90
+                                        R$ 149,90/MÊS
                                     </span>
                                 </h1>
                                 <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
