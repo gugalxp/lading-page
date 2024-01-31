@@ -162,14 +162,7 @@ export function Home() {
                     </div>
                     <div className="parallax-content">
                         <div className="content-services">
-                            <List
-                                dataSource={benefitsData}
-                                renderItem={(item) => (
-                                    <List.Item style={{ color: '#fff', fontSize: '20px' }}>
-                                        <CheckOutlined style={{ color: '#5662F6', fontSize: '30px', fontWeight: 'bold' }} /> {item}
-                                    </List.Item>
-                                )}
-                            />
+                                    EM CONSTRUÇÃO
 
                             <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
                                 Eu quero lucrar todos os dias
