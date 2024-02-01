@@ -12,7 +12,7 @@ export function Home() {
 
         'SINAIS DE BRANCO AO VIVO E EM LISTA.',
         'LIVES/CORUJÃO.',
-        'ORIENTAÇÃO E DICAS COMO LER A PLATAFORMA INCLUSIVE AS RECUPERAÇÕES DE BRANCO.',
+        'ORIENTAÇÃO E DICAS DE COMO LER A PLATAFORMA INCLUSIVE AS RECUPERAÇÕES DE BRANCO.',
         'SUPORTE EXCLUSIVO.',
     ];
 
@@ -67,9 +67,11 @@ export function Home() {
                                 Entre de cabeça na <span style={{ color: '#5662F6' }}>experiência frenética
                                 </span> dos sinais de branco. <span style={{ whiteSpace: 'nowrap' }}>O MAIOR DO MUNDO!</span>
                             </h1>
-                            <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
-                                Eu quero lucrar todos os dias
-                            </Button>
+                            <a href="https://sun.eduzz.com/2007612" target="_blank" rel="noopener noreferrer">
+                                <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
+                                    Eu quero lucrar todos os dias
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -92,10 +94,11 @@ export function Home() {
                                     </List.Item>
                                 )}
                             />
-
-                            <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
-                                Eu quero lucrar todos os dias
-                            </Button>
+                            <a href="https://sun.eduzz.com/2007612" target="_blank" rel="noopener noreferrer">
+                                <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
+                                    Eu quero lucrar todos os dias
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -191,8 +194,8 @@ export function Home() {
                     <div className="parallax-content-main3">
                         <div className="content-services-promocao">
                             <div style={{ color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', fontWeight: 'bolder' }}>
-                                <span style={{ margin: '2em 0', background: '#FF0A44', padding: '1em', }}>
-                                    PREÇO NORMAL: R$ 250,00/MÊS
+                                <span style={{ margin: '2em 0', fontSize: '22px', background: '#FF0A44', padding: '1em', }}>
+                                    PREÇO NORMAL: <span style={{ whiteSpace: 'nowrap' }}>R$ 250,00/MÊS</span>
                                 </span>
                                 <CountdownCircleTimer
                                     isPlaying
@@ -213,12 +216,14 @@ export function Home() {
                                 <h1 style={{ textAlign: 'center', width: '100%' }}>
                                     ASSINE NO PERÍODO PROMOCIONAL E SUA MENSALIDADE SEMPRE SERÁ: <br />
                                     <span style={{ color: 'green', whiteSpace: 'nowrap', fontSize: '32px', marginTop: '3em' }}>
-                                        R$ 149,90/MÊS
+                                        R$ 129,90/MÊS
                                     </span>
                                 </h1>
-                                <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
-                                    Eu quero lucrar todos os dias
-                                </Button>
+                                <a href="https://sun.eduzz.com/2007612" target="_blank" rel="noopener noreferrer">
+                                    <Button className="button" data-aos="zoom-in" data-aos-duration="2000">
+                                        Eu quero lucrar todos os dias
+                                    </Button>
+                                </a>
                             </div>
                         </div>
                     </div>
